@@ -1,26 +1,33 @@
 {
-    "name": "trainline-tools",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "build": "webpack",
-        "example": "babel-node ./example/index.js"
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "@babel/core": "^7.12.3",
-        "@babel/node": "^7.12.1",
-        "@babel/preset-typescript": "^7.12.1",
-        "source-map-loader": "^1.1.1",
-        "ts-loader": "^8.0.7",
-        "typescript": "^4.0.3",
-        "webpack": "^5.2.0",
-        "webpack-cli": "^4.1.0"
-    },
-    "dependencies": {
-        "@types/node-fetch": "^2.5.7",
-        "node-fetch": "^2.6.1"
-    }
+  "name": "trainline-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "example": "babel-node ./example/index.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "@types/jest": "^26.0.15",
+    "babel-jest": "^26.6.1",
+    "jest": "^26.6.1",
+    "source-map-loader": "^1.1.1",
+    "ts-jest": "^26.4.3",
+    "ts-loader": "^8.0.7",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3",
+    "webpack": "^5.2.0",
+    "webpack-cli": "^4.1.0"
+  },
+  "dependencies": {
+    "@types/node-fetch": "^2.5.7",
+    "node-fetch": "^2.6.1"
+  }
 }

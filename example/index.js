@@ -1,3 +1,3 @@
-const { searchStation } = require('../dist/bundle')
+const { searchJourneys } = require('../dist/bundle')
 
-searchStation('Met').then((stations) => console.log(stations))
+searchJourneys()

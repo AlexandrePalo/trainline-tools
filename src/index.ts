@@ -1,3 +1,4 @@
-import { searchStation } from './api/stations'
+import { searchLocations } from './api/locations'
+import { searchJourneys } from './api/journey'
 
-export { searchStation }
+export { searchLocations, searchJourneys }

@@ -1,10 +1,17 @@
 import fetch from 'node-fetch'
-import { locationPotJSONResponse, station } from './interface/raw'
+import { locationPotJSONResponse, location } from './interface/location'
+import { TrainlineError, ValidationError } from '../errors'
 
 // https://github.com/trainline-eu/stations
 
-export const searchStation = async (term: string): Promise<station[]> => {
+export const searchLocations = async (
+    term: string
+): Promise<location[] | Error> => {
     // From: web scrapping
+
+    if (!term || typeof term !== 'string') {
+        throw new ValidationError('term string is mandatory')
+    }
 
     const scopes = [
         'atoconly',
@@ -62,5 +69,8 @@ export const searchStation = async (term: string): Promise<station[]> => {
                     source: 'rest-of-world',
                 })),
             ]
+        })
+        .catch((err) => {
+            throw new TrainlineError(err)
         })
 }

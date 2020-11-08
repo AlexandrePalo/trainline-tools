@@ -56,7 +56,7 @@ export const searchLocations = async (
             : `${key}=${options[key]}`
     }, '')}`
 
-    return await fetch(url, { method: 'GET' })
+    return fetch(url, { method: 'GET' })
         .then((res) => res.json())
         .then((json: locationPotJSONResponse) => {
             return [

@@ -28,6 +28,8 @@
   },
   "dependencies": {
     "@types/node-fetch": "^2.5.7",
-    "node-fetch": "^2.6.1"
+    "chalk": "^4.1.0",
+    "node-fetch": "^2.6.1",
+    "ora": "^5.1.0"
   }
 }

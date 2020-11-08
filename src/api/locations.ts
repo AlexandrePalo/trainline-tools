@@ -10,7 +10,7 @@ export const searchLocations = async (
     // From: web scrapping
 
     if (!term || typeof term !== 'string') {
-        throw new ValidationError('term string is mandatory')
+        throw new ValidationError("'term' string is mandatory")
     }
 
     const scopes = [
